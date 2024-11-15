@@ -1,5 +1,6 @@
 import React from "react";
-import "./login.css"; // Certifique-se de que o caminho para o CSS está correto
+import { Link } from "react-router-dom"; // Importando o Link do React Router
+import "./login.css";
 
 function Login() {
   return (
@@ -28,7 +29,7 @@ function Login() {
         <a href="/Esqueci_Senha.html">Esqueci minha senha</a>
         <p>
           Ainda não tem uma conta?{" "}
-          <a href="Cadastro.html">Crie uma.</a>
+          <Link to="">Crie uma.</Link> {/* Usando Link para redirecionar */}
         </p>
 
         <input type="submit" value="Acessar" className="btn" />
@@ -38,3 +39,4 @@ function Login() {
 }
 
 export default Login;
+
